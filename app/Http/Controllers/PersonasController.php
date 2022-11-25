@@ -10,7 +10,7 @@ class PersonasController extends Controller
 
     public function index(){
         //Página de inicio
-        $datos = Personas::orderBy('id','desc')->paginate(10);
+        $datos = Personas::orderBy('id','asc')->paginate(10);
         return view('inicio', compact('datos'));
     }
 
@@ -23,8 +23,8 @@ class PersonasController extends Controller
         //Guarda datos en la DB
         $personas = new Personas();
         $personas->nombre = $request->post('nombre');
-        $personas->apellido_paterno = $request->post('apellido_paterno');
-        $personas->apellido_materno = $request->post('apellido_materno');
+        $personas->paterno = $request->post('paterno');
+        $personas->materno = $request->post('materno');
         $personas->fecha_nacimiento = $request->post('fecha_nacimiento');
         $personas->save();
 
@@ -47,8 +47,8 @@ class PersonasController extends Controller
         //Actualiza los datos en la DB
         $personas = Personas::find($id);
         $personas->nombre = $request->post('nombre');
-        $personas->apellido_paterno = $request->post('apellido_paterno');
-        $personas->apellido_materno = $request->post('apellido_materno');
+        $personas->paterno = $request->post('paterno');
+        $personas->materno = $request->post('materno');
         $personas->fecha_nacimiento = $request->post('fecha_nacimiento');
         $personas->save();
 

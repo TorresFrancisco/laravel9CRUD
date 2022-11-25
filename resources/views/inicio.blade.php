@@ -34,8 +34,8 @@
                             <tr>
                                 <td>{{$item->id}}</td>
                                 <td>{{$item->nombre}}</td>
-                                <td>{{$item->apellido_paterno}}</td>
-                                <td>{{$item->apellido_materno}}</td>
+                                <td>{{$item->paterno}}</td>
+                                <td>{{$item->materno}}</td>
                                 <td>{{$item->fecha_nacimiento}}</td>
                                 <td>
                                     <form action="{{ route("personas.edit", $item->id) }}" method="GET">

@@ -23,8 +23,8 @@
                                 <tr>
                                     <td> {{$personas->id}} </td>
                                     <td> {{$personas->nombre }} </td>
-                                    <td> {{$personas->apellido_paterno}} </td>
-                                    <td> {{$personas->apellido_materno}} </td>
+                                    <td> {{$personas->paterno}} </td>
+                                    <td> {{$personas->materno}} </td>
                                     <td> {{$personas->fecha_nacimiento}} </td>
                                 </tr>
                             </tbody>

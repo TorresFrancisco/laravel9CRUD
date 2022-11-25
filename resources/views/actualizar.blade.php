@@ -14,10 +14,10 @@
                     <input type="text" name="nombre" class="form-control" required value="{{ $personas->nombre}}">
                     
                     <label for="">Apellido Paterno</label>
-                    <input type="text" name="apellido_paterno" class="form-control" required value="{{ $personas->apellido_paterno}}">
+                    <input type="text" name="paterno" class="form-control" required value="{{ $personas->paterno}}">
                     
                     <label for="">Apellido Materno</label>
-                    <input type="text" name="apellido_materno" class="form-control" required value="{{ $personas->apellido_materno}}">
+                    <input type="text" name="materno" class="form-control" required value="{{ $personas->materno}}">
                     
                     <label for="">Fecha de Nacimiento</label>
                     <input type="date" name="fecha_nacimiento" class="form-control" required value="{{ $personas->fecha_nacimiento}}">

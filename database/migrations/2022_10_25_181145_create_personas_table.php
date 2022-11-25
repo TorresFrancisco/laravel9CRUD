@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('paterno');
             $table->string('materno');
-            $table->date('fecha_nacimineto');
+            $table->date('fecha_nacimiento');
             $table->timestamps();
         });
     }
